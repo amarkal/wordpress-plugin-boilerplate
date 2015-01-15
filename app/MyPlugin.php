@@ -17,8 +17,6 @@ class MyPlugin extends Plugin\AbstractPlugin {
         // Register an options page
         $this->options = new Options\OptionsPage( include('OptionsConfig.php') );
         $this->options->register();
-        
-        $this->register_assets();
     }
     
     public function generate_defines()
