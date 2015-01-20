@@ -42,7 +42,7 @@ return array(
                             'title'         => 'Toggle Button',
                             'default'       => 'Two',
                             'labels'        => array('One', 'Two', 'Three'),
-                            'help'          => 'Toggle buttons can have more than 2 values'
+                            'help'          => 'Toggle buttons can have more than 2 labels'
                         )),
                         new Components\ToggleButton(array(
                             'name'          => 'toggle2',
@@ -50,7 +50,7 @@ return array(
                             'default'       => 'Two',
                             'labels'        => array('One', 'Two', 'Three'),
                             'multivalue'    => true,
-                            'help'          => 'Toggle buttons can have multiple values'
+                            'help'          => 'Toggle buttons can have multiple active values'
                         )),
                         new Components\Spinner(array(
                             'name'          => 'spinner',
