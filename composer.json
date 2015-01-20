@@ -1,0 +1,13 @@
+{
+    "name": "vendor/wordpress-plugin-boilerplate",
+    "description": "Description of project wordpress-plugin-boilerplate.",
+    "authors": [
+        {
+            "name": "yoavkadosh",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "askupa-software/amarkal-framework": "dev-master"
+    }
+}

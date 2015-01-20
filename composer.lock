@@ -1,0 +1,54 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "3f0073f4e6ebcb6ba4c1502107ef44fc",
+    "packages": [
+        {
+            "name": "askupa-software/amarkal-framework",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/amarkal/amarkal.git",
+                "reference": "4a9967f264c8ba8b976aa3bab234eeaf15b8ee70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/amarkal/amarkal/zipball/4a9967f264c8ba8b976aa3bab234eeaf15b8ee70",
+                "reference": "4a9967f264c8ba8b976aa3bab234eeaf15b8ee70",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "description": "Development framework for WordPress.",
+            "keywords": [
+                "amarkal",
+                "framework",
+                "options",
+                "plugin",
+                "template",
+                "widget",
+                "wordpress"
+            ],
+            "time": "2015-01-20 04:45:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "askupa-software/amarkal-framework": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
