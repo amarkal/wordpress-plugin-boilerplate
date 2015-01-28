@@ -129,6 +129,17 @@ return array(
                             'title'         => 'Textarea',
                             'help'          => 'While the text input is useful for single lines of inputs, this one allows multiple lines. The size can be easily adjusted.',
                         )),
+                        new Components\Checkbox(array(
+                            'name'          => 'checkbox',
+                            'title'         => 'Check Boxes',
+                            'help'          => 'This is a checkbox group. Useful if there are many options to choose from.',
+                            'default'       => 'val1,val3',
+                            'options'       => array(
+                                'val1'      => 'Option 1',
+                                'val2'      => 'Option 2',
+                                'val3'      => 'Option 3',
+                            )
+                        )),
                         new Components\Process(array(
                             'name'          => 'process',
                             'title'         => 'Button',
@@ -189,6 +200,17 @@ return array(
                             'title'         => 'Textarea',
                             'disabled'      => true
                         )),
+                        new Components\Checkbox(array(
+                            'name'          => 'checkbox_disabled',
+                            'title'         => 'Check Boxes',
+                            'default'       => 'val1,val3',
+                            'disabled'      => true,
+                            'options'       => array(
+                                'val1'      => 'Option 1',
+                                'val2'      => 'Option 2',
+                                'val3'      => 'Option 3',
+                            )
+                        )),
                         new Components\Process(array(
                             'name'          => 'process_disabled',
                             'title'         => 'Button',
@@ -221,7 +243,7 @@ return array(
                     'help'          => 'This text input only accepts numbers',
                     'validation'    => function( $v, &$e ) {
                         $e = 'The value <strong>'.$v.'</strong> is invalid for <strong>Numbers Only</strong>, only numbers are allowd';
-                        return is_numeric($v);
+                        return is_numeric($v) || empty($v);
                     }
                 ))
             )
