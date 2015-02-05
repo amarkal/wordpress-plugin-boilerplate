@@ -150,6 +150,28 @@ return array(
                                 Options\Notifier::INFO('The button "Click Me" was clicked. This notification was called from the callback function.');
                             },
                             'hook'          => 'afw_options_init'
+                        )),
+                        new Components\ProgressBar(array(
+                            'title'         => 'Progress Bar',
+                            'help'          => 'Progress bars are static objects that are given 2 values: value and max. These objects can be used to present information graphically',
+                            'value'         => 34,
+                            'max'           => 100
+                        )),
+                        new Components\Content(array(
+                            'title'         => 'HTML Content',
+                            'help'          => 'This is a simple HTML placeholder. Both PHP and plain HTML are acceptable.',
+                            'template'      => MyPlugin\PLUGIN_DIR.'/content/simple.phtml'
+                        )),
+                        new Components\Content(array(
+                            'title'         => 'AJAX HTML Content',
+                            'help'          => 'HTML content placeholdes have the option to be retrieved using ajax. Parameters can be passed through to the script as well.',
+                            'template'      => MyPlugin\PLUGIN_URL.'content/ajax.phtml',
+                            'ajax'          => true,
+                            'args'          => array(
+                                'arg1', 
+                                'arg2', 
+                                'arg3'
+                            )
                         ))
                     )
                 ),

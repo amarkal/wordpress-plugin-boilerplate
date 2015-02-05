@@ -21,12 +21,11 @@ class MyPlugin extends Plugin\AbstractPlugin {
     
     public function generate_defines()
     {
-        $basepath = dirname( __FILE__ );
-        define( __NAMESPACE__.'\PLUGIN_DIR', $basepath );
-        define( __NAMESPACE__.'\PLUGIN_URL', plugin_dir_url( $basepath ) );
-        define( __NAMESPACE__.'\JS_URL', plugin_dir_url( $basepath ).'app/assets/js' );
-        define( __NAMESPACE__.'\CSS_URL', plugin_dir_url( $basepath ).'app/assets/css' );
-        define( __NAMESPACE__.'\IMG_URL', plugin_dir_url( $basepath ).'app/assets/img' );
+        define( __NAMESPACE__.'\PLUGIN_DIR', dirname( __FILE__ ) );
+        define( __NAMESPACE__.'\PLUGIN_URL', \plugin_dir_url( __FILE__ ) );
+        define( __NAMESPACE__.'\JS_URL', \plugin_dir_url( __FILE__ ).'app/assets/js' );
+        define( __NAMESPACE__.'\CSS_URL', \plugin_dir_url( __FILE__ ).'app/assets/css' );
+        define( __NAMESPACE__.'\IMG_URL', \plugin_dir_url( __FILE__ ).'app/assets/img' );
         define( __NAMESPACE__.'\PLUGIN_VERSION', '1.0' );
     }
     
