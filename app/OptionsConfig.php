@@ -172,6 +172,26 @@ return array(
                                 'arg2', 
                                 'arg3'
                             )
+                        )),
+                        new Components\CodeEditor(array(
+                            'title'         => 'Code Editor',
+                            'help'          => 'Code can be edited live easily using this embedded Ace editor. Themes and languages can be specified.',
+                            'name'          => 'editor',
+                            'default'       => 'function sayHello( name )
+{
+    alert( "Hello " + name + "!" );
+}
+sayHello("Fred");',
+                            'language'      => 'javascript',
+                            'theme'         => 'github'
+                        )),
+                        new Components\CodeEditor(array(
+                            'title'         => 'Code Editor',
+                            'help'          => 'This editor loads and saves the code into a file.',
+                            'name'          => 'editor_file',
+                            'file'          => MyPlugin\PLUGIN_DIR.'/content/snippet.php',
+                            'language'      => 'php',
+                            'theme'         => 'twilight'
                         ))
                     )
                 ),
@@ -237,6 +257,18 @@ return array(
                             'name'          => 'process_disabled',
                             'title'         => 'Button',
                             'label'         => 'Click Me!',
+                            'disabled'      => true
+                        )),
+                        new Components\CodeEditor(array(
+                            'title'         => 'Code Editor',
+                            'name'          => 'editor_disabled',
+                            'default'       => 'function sayHello( name )
+{
+    alert( "Hello " + name + "!" );
+}
+sayHello("Fred");',
+                            'language'      => 'javascript',
+                            'theme'         => 'github',
                             'disabled'      => true
                         ))
                     )
