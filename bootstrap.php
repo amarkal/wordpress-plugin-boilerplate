@@ -27,10 +27,7 @@ if( !function_exists('myplugin_bootstrap') )
     {
         // Check that the system is sufficient to run Amarkal.
         $validator = require_once 'vendor/askupa-software/amarkal-framework/EnvironmentValidator.php';
-        if ( $validator->is_valid( 'plugin', 'Plugin Name' ) )
-        { 
-            require_once 'app/MyPlugin.php';
-        }
+        $validator->add_plugin( 'MyPlugin', dirname( __FILE__ ).'/app/MyPlugin.php' );
     }
-    add_action( 'plugins_loaded', 'myplugin_bootstrap' );
 }
+myplugin_bootstrap();
