@@ -1,20 +1,17 @@
 <?php
 /**
- * Amarkal Based WordPress Plugin Boilerplate
+ * A WordPress plugin boilerplate, implemented using the Amarkal Framework
  *
- * This boilerplate is used as a starting point for Amarkal based WordPress
- * plugins.
- *
- * @package         Plugin Name
+ * @package         WordPress Plugin Boilerplate
  * @author          Author name <email>
  * @link            http://www.website.com/myplugin
- * @copyright       2014 author name
+ * @copyright       2017 author name
  *
  * @wordpress-plugin
- * Plugin Name:     Plugin Name
+ * Plugin Name:     WordPress Plugin Boilerplate
  * Plugin URI:      http://www.website.com/myplugin
- * Description:     Amarkal Based WordPress Plugin Boilerplate
- * Version:         1.0
+ * Description:     A WordPress plugin boilerplate, implemented using the Amarkal Framework
+ * Version:         1.0.0
  * Author:          Author name
  * Author URI:      http://www.website.com/
  * Text Domain:     myplugin/
@@ -25,9 +22,8 @@ if( !function_exists('myplugin_bootstrap') )
 {
     function myplugin_bootstrap()
     {
-        // Check that the system is sufficient to run Amarkal.
-        $validator = require_once 'vendor/askupa-software/amarkal-framework/EnvironmentValidator.php';
-        $validator->add_plugin( 'MyPlugin', dirname( __FILE__ ).'/app/MyPlugin.php' );
+        require_once 'vendor/autoload.php';
+        WPPB\Plugin::init();
     }
 }
 myplugin_bootstrap();

@@ -7,7 +7,20 @@
             "email": "your@email.here"
         }
     ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "WPPB\\": "includes/"
+        }
+    },
     "require": {
-        "askupa-software/amarkal-framework": "dev-master"
+        "askupa-software/amarkal-ui": "dev-master",
+        "askupa-software/amarkal-validation": "dev-master",
+        "askupa-software/amarkal-admin-notification": "dev-master",
+        "askupa-software/amarkal-settings": "dev-master",
+        "askupa-software/amarkal-metabox": "dev-master",
+        "askupa-software/amarkal-taxonomy": "dev-master",
+        "askupa-software/amarkal-widget": "dev-master",
+        "askupa-software/amarkal-shortcode": "dev-master"
     }
 }
