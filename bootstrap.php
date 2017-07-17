@@ -25,5 +25,5 @@ if( !function_exists('myplugin_bootstrap') )
         require_once 'vendor/autoload.php';
         WPPB\Plugin::init();
     }
+    myplugin_bootstrap();
 }
-myplugin_bootstrap();

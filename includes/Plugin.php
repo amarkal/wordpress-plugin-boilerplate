@@ -15,17 +15,21 @@ class Plugin
         return static::$instance;
     }
 
-    public function __construct() 
+    private function __construct() 
     {
         $this->generate_defines();
         
         Settings::init();
+        MetaBox::init();
+        Widgets::init();
+        Taxonomy::init();
+        Shortcodes::init();
     }
     
     public function generate_defines()
     {
         define( __NAMESPACE__.'\PLUGIN_DIR', dirname( __FILE__ ) );
-        define( __NAMESPACE__.'\PLUGIN_URL', \plugin_dir_url( __FILE__ ) );
+        define( __NAMESPACE__.'\PLUGIN_URL', \plugin_dir_url( dirname( __FILE__ ) ) );
         define( __NAMESPACE__.'\JS_URL', \plugin_dir_url( __FILE__ ).'assets/js' );
         define( __NAMESPACE__.'\CSS_URL', \plugin_dir_url( __FILE__ ).'assets/css' );
         define( __NAMESPACE__.'\IMG_URL', \plugin_dir_url( __FILE__ ).'assets/img' );

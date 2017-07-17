@@ -15,7 +15,7 @@ class Settings
         return static::$instance;
     }
 
-    public function __construct() 
+    private function __construct() 
     {
         amarkal_add_settings_page(array(
             'slug'         => 'my-settings-page',
@@ -185,7 +185,7 @@ class Settings
         // Add a settings page to the Tools sidebar submenu
         amarkal_add_settings_child_page(array(
             'parent_slug'  => 'tools.php',
-            'slug'         => 'toolsphp-child-page',
+            'slug'         => 'toolsphp-childv-page',
             'title'        => 'Tools.php Child Page',
             'menu_title'   => 'Amarkal settings',
             'fields'       => array(
