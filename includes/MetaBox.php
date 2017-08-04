@@ -36,8 +36,15 @@ class MetaBox
                     'placeholder'     => 'Enter text...',
                     'size'            => 40,
                     'required'        => false,
-                    'default'         => null,
-                    'filter'          => 'sanitize_text_field'
+                    'default'         => 'Some default text',
+                    'filter'          => 'sanitize_text_field',
+                    'validation'      => function($v,&$e) {
+                        if(strlen($v) > 20) {
+                            $e = 'Text Field must be less than 20 characters long';
+                            return false;
+                        }
+                        return true;
+                    }
                 ),
                 array(
                     'type'            => 'number',
@@ -53,6 +60,23 @@ class MetaBox
                     'default'         => 5,
                     'max'             => 20
                 )
+            )
+        ));
+
+        // Add a metabox to the 'page' post type
+        amarkal_add_meta_box('my_meta_box_2', array(
+            'title'     => 'My Meta Box',
+            'screen'    => 'page',
+            'context'   => 'normal',
+            'priority'  => 'default',
+            'fields'    => array(
+                array(
+                    'type'            => 'text',
+                    'title'           => 'Text Field #2',
+                    'name'            => 'my-textfield-2',
+                    'placeholder'     => 'Enter text...',
+                    'default'         => null
+                ),
             )
         ));
     }

@@ -58,6 +58,15 @@ class Shortcodes
                     'title'       => 'Content',
                     'description' => 'The alert\'s content',
                     'default'     => 'Some text'
+                ),
+                array(
+                    'type'            => 'slider',
+                    'title'           => 'Slider',
+                    'description'     => 'The <code>slider</code> allows the user to select a numeric value within a range of values.',
+                    'name'            => 'slider',
+                    'min'             => 0,
+                    'max'             => 20,
+                    'default'         => 10
                 )
             )
         ));

@@ -28,5 +28,14 @@ class Taxonomy
                 'sortable'  => true   // Make that column sortable
             )
         ));
+
+        // This is an example of using a non-value component
+        \amarkal_taxonomy_add_field('category', array(
+            'type'        => 'button',
+            'title'       => 'Button',
+            'label_start' => 'Do Something',
+            'description' => 'Just a test button',
+            'request_url' => ''
+        ));
     }
 }

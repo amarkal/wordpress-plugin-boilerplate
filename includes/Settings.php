@@ -110,6 +110,92 @@ class Settings
                     'default'         => 'off'
                 ),
                 array(
+                    'type'            => 'slider',
+                    'title'           => 'Slider',
+                    'description'     => 'The <code>slider</code> element is used to specify a number or a range.',
+                    'name'            => 'my-slider',
+                    'default'         => 0,
+                    'min'             => 0,
+                    'max'             => 100
+                ),
+                array(
+                    'type'            => 'slider',
+                    'title'           => 'Slider',
+                    'description'     => 'A slider example with large numbers.',
+                    'name'            => 'my-slider-2',
+                    'default'         => 5000,
+                    'min'             => 0,
+                    'max'             => 10000,
+                    'step'            => 500
+                ),
+                array(
+                    'type'            => 'slider',
+                    'title'           => 'Slider',
+                    'description'     => 'A slider example with negative numbers.',
+                    'name'            => 'my-slider-3',
+                    'default'         => -7,
+                    'min'             => -10,
+                    'max'             => -5,
+                    'step'            => 1
+                ),
+                array(
+                    'type'            => 'slider',
+                    'title'           => 'Slider',
+                    'description'     => 'A slider example decimal numbers.',
+                    'name'            => 'my-slider-4',
+                    'default'         => 0.5,
+                    'min'             => 0,
+                    'max'             => 1,
+                    'step'            => .05
+                ),
+                array(
+                    'type'            => 'button',
+                    'title'           => 'Button',
+                    'label_start'     => 'Do Something',
+                    'label_done'      => 'Done!',
+                    'label_doing'     => 'Processing...',
+                    'request_url'     => admin_url('admin-ajax.php'),
+                    'request_data'    => array(
+                        'action'      => 'my_button_callback'
+                    ),
+                    'description'     => 'The <code>button</code> component is used to run a callback in the backend.'
+                ),
+                array(
+                    'type'            => 'toggle',
+                    'title'           => 'Toggle',
+                    'name'            => 'my-toggle',
+                    'description'     => 'The <code>toggle</code> element lets the user select one or more options from a list of options.',
+                    'default'         => 'key2',
+                    'data'            => array(
+                        'key1'  => 'Value 1',
+                        'key2'  => 'Value 2',
+                        'key3'  => 'Value 3'
+                    )
+                ),
+                array(
+                    'type'            => 'toggle',
+                    'title'           => 'Toggle',
+                    'name'            => 'my-toggle-1',
+                    'description'     => 'This <code>toggle</code> element accepts multiple selections.',
+                    'multi'           => true,
+                    'default'         => array('key1'),
+                    'data'            => array(
+                        'key1'  => 'Value 1',
+                        'key2'  => 'Value 2',
+                        'key3'  => 'Value 3'
+                    )
+                ),
+                array(
+                    'type'            => 'code',
+                    'title'           => 'Code',
+                    'description'     => 'The <code>code</code> component is a code editor instance based on Cloud9\'s Ace Editor.',
+                    'name'            => 'code',
+                    'max_lines'       => 10,
+                    'default'         => "<?php \n\$var = 'hello';\necho \"\$var world\";\n?>",
+                    'language'        => 'php',
+                    'editable'        => true
+                ),
+                array(
                     'type'            => 'composite',
                     'title'           => 'Composite',
                     'description'     => 'The <code>composite</code> component is a component comprised of other UI components',
@@ -201,5 +287,12 @@ class Settings
             )
         ));
 
+        \add_action('wp_ajax_my_button_callback', array( $this, 'button_callback'));
+    }
+
+    public function button_callback()
+    {
+        sleep(3);
+        \wp_die();
     }
 }
