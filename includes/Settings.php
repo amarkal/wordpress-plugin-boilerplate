@@ -196,6 +196,14 @@ class Settings
                     'editable'        => true
                 ),
                 array(
+                    'type'            => 'progressbar',
+                    'title'           => 'Progressbar',
+                    'description'     => 'The <code>progressbar</code> component is a readonly component used to display progress.',
+                    'min'             => 0,
+                    'max'             => 800,
+                    'value'           => 120
+                ),
+                array(
                     'type'            => 'composite',
                     'title'           => 'Composite',
                     'description'     => 'The <code>composite</code> component is a component comprised of other UI components',
