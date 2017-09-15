@@ -29,7 +29,10 @@ class Shortcodes
             'show_placeholder' => true,
             'placeholder_class' => 'my-alert-placeholder',
             'placeholder_icon' => PLUGIN_URL.'assets/img/amarkal.png',
-            'placeholder_visible_field' => 'type',
+            'placeholder_subtitle' => 'Type: {{type}}',
+            'render'    => function($values) {
+                echo '<div class="my-alert '.$values['type'].'"><h3>'.$values['title'].'</h3>'.$values['content'].'</div>';
+            },
             'fields'    => array(
                 array(
                     'type'        => 'text',
@@ -58,6 +61,18 @@ class Shortcodes
                     'title'       => 'Content',
                     'description' => 'The alert\'s content',
                     'default'     => 'Some text'
+                ),
+                array(
+                    'type'        => 'checkbox',
+                    'name'        => 'checkbox',
+                    'title'       => 'Checkbox',
+                    'description' => 'The <code>checbox</code> allows the user to select a one or more values from a list of available values.',
+                    'default'     => array('key2'),
+                    'data'        => array(
+                        'key1'       => 'value1',
+                        'key2'       => 'value2',
+                        'key3'       => 'value3'
+                    )
                 ),
                 array(
                     'type'            => 'slider',
