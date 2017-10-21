@@ -207,6 +207,132 @@ return array(
             )
         ),
         array(
+            'slug'         => 'disabled_components',
+            'title'        => 'Disabled Components',
+            'subtitle'     => 'All disableable component in their disabled state',
+            'fields'       => array(
+                array(
+                    'name'      => 'disabled_text',
+                    'type'      => 'text',
+                    'disabled'  => true,
+                    'default'   => 'Disabled text'
+                ),
+                array(
+                    'name'      => 'disabled_textarea',
+                    'type'      => 'textarea',
+                    'disabled'  => true,
+                    'default'   => 'Disabled text'
+                ),
+                array(
+                    'name'      => 'disabled_number',
+                    'type'      => 'number',
+                    'disabled'  => true,
+                    'default'   => 123456
+                ),
+                array(
+                    'name'      => 'disabled_button',
+                    'type'      => 'button',
+                    'request_url'=> '',
+                    'disabled'  => true,
+                    'label_start'=> 'Disabled Button'
+                ),
+                array(
+                    'name'      => 'disabled_checkbox',
+                    'type'      => 'checkbox',
+                    'disabled'  => true,
+                    'default'   => array('key2'),
+                    'data'      => array(
+                        'key1'    => 'Value 1',
+                        'key2'    => 'Value 2',
+                        'key3'    => 'Value 3'
+                    )
+                ),
+                array(
+                    'name'      => 'disabled_code',
+                    'type'      => 'code',
+                    'disabled'  => true,
+                    'default'   => 'asdasd',
+                    'language'  => 'php'
+                ),
+                array(
+                    'name'      => 'disabled_composite',
+                    'type'      => 'composite',
+                    'template'  => '{{text}}<br>{{textarea}}',
+                    'default'   => array(
+                        'text'     => 'Disabled text',
+                        'textarea' => 'Disabled text'
+                    ),
+                    'components'=> array(
+                        array(
+                            'name'      => 'text',
+                            'type'      => 'text',
+                            'disabled'  => true
+                        ),
+                        array(
+                            'name'      => 'textarea',
+                            'type'      => 'textarea',
+                            'disabled'  => true
+                        )
+                    )
+                ),
+                array(
+                    'name'      => 'disabled_radio',
+                    'type'      => 'radio',
+                    'disabled'  => true,
+                    'default'   => array('key2'),
+                    'data'      => array(
+                        'key1'    => 'Value 1',
+                        'key2'    => 'Value 2',
+                        'key3'    => 'Value 3'
+                    )
+                ),
+                array(
+                    'name'      => 'disabled_select',
+                    'type'      => 'select',
+                    'disabled'  => true,
+                    'default'   => array('key2'),
+                    'data'      => array(
+                        'key1'    => 'Value 1',
+                        'key2'    => 'Value 2',
+                        'key3'    => 'Value 3'
+                    )
+                ),
+                array(
+                    'name'      => 'disabled_slider',
+                    'type'      => 'slider',
+                    'disabled'  => true,
+                    'min'       => 0,
+                    'max'       => 100
+                ),
+                array(
+                    'name'      => 'disabled_switch',
+                    'type'      => 'switch',
+                    'disabled'  => true
+                ),
+                array(
+                    'name'      => 'disabled_toggle',
+                    'type'      => 'toggle',
+                    'disabled'  => true,
+                    'default'   => 'key2',
+                    'data'      => array(
+                        'key1'    => 'Value 1',
+                        'key2'    => 'Value 2',
+                        'key3'    => 'Value 3'
+                    )
+                ),
+                array(
+                    'name'      => 'disabled_toggle1',
+                    'type'      => 'toggle',
+                    'disabled'  => true,
+                    'data'      => array(
+                        'key1'    => 'Value 1',
+                        'key2'    => 'Value 2',
+                        'key3'    => 'Value 3'
+                    )
+                ),
+            )
+        ),
+        array(
             'slug'         => 'validation',
             'title'        => 'Validation',
             'subtitle'     => 'Amarkal UI Components validation',
