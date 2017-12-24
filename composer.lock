@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+    "hash": "16ba8b5ed718149bf741c24a59957ff2",
     "content-hash": "f413786392bc66467cf8e4f88038a3f4",
     "packages": [
         {
@@ -57,12 +58,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/askupasoftware/amarkal-core.git",
-                "reference": "62d6329bfe83f28e91fa59bf0cddb819afb00aeb"
+                "reference": "86f5b2b6aa6c87bb190889d6af054e1da3d47c24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/askupasoftware/amarkal-core/zipball/62d6329bfe83f28e91fa59bf0cddb819afb00aeb",
-                "reference": "62d6329bfe83f28e91fa59bf0cddb819afb00aeb",
+                "url": "https://api.github.com/repos/askupasoftware/amarkal-core/zipball/86f5b2b6aa6c87bb190889d6af054e1da3d47c24",
+                "reference": "86f5b2b6aa6c87bb190889d6af054e1da3d47c24",
                 "shasum": ""
             },
             "require": {
@@ -95,7 +96,7 @@
                 "framework",
                 "wordpress"
             ],
-            "time": "2017-05-22 00:14:31"
+            "time": "2017-12-16 22:00:16"
         },
         {
             "name": "askupa-software/amarkal-metabox",
@@ -152,12 +153,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/askupasoftware/amarkal-settings.git",
-                "reference": "01e407b3fb12388ffce8da225dcf2ec13dec1e16"
+                "reference": "b9f7ecf887eb91ea55a206fa4af4e5fa39f11f33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/askupasoftware/amarkal-settings/zipball/01e407b3fb12388ffce8da225dcf2ec13dec1e16",
-                "reference": "01e407b3fb12388ffce8da225dcf2ec13dec1e16",
+                "url": "https://api.github.com/repos/askupasoftware/amarkal-settings/zipball/b9f7ecf887eb91ea55a206fa4af4e5fa39f11f33",
+                "reference": "b9f7ecf887eb91ea55a206fa4af4e5fa39f11f33",
                 "shasum": ""
             },
             "require": {
@@ -195,7 +196,7 @@
                 "user interface",
                 "wordpress"
             ],
-            "time": "2017-08-29 20:26:46"
+            "time": "2017-12-08 14:06:09"
         },
         {
             "name": "askupa-software/amarkal-shortcode",
@@ -203,12 +204,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/askupasoftware/amarkal-shortcode.git",
-                "reference": "9f4abe7e9a69121e3deeb626ae222b7e304b2668"
+                "reference": "dd27e7c3c2b7695c4c58690cf214172b2249f423"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/askupasoftware/amarkal-shortcode/zipball/9f4abe7e9a69121e3deeb626ae222b7e304b2668",
-                "reference": "9f4abe7e9a69121e3deeb626ae222b7e304b2668",
+                "url": "https://api.github.com/repos/askupasoftware/amarkal-shortcode/zipball/dd27e7c3c2b7695c4c58690cf214172b2249f423",
+                "reference": "dd27e7c3c2b7695c4c58690cf214172b2249f423",
                 "shasum": ""
             },
             "require": {
@@ -245,7 +246,7 @@
                 "user interface",
                 "wordpress"
             ],
-            "time": "2017-09-15 14:27:59"
+            "time": "2017-12-03 19:23:24"
         },
         {
             "name": "askupa-software/amarkal-taxonomy",
@@ -302,12 +303,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/askupasoftware/amarkal-ui.git",
-                "reference": "63292c437cf9db5ef565e672eab62eca10fba171"
+                "reference": "b21678237ae2f26a2319b8630223306bd2d76cd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/askupasoftware/amarkal-ui/zipball/63292c437cf9db5ef565e672eab62eca10fba171",
-                "reference": "63292c437cf9db5ef565e672eab62eca10fba171",
+                "url": "https://api.github.com/repos/askupasoftware/amarkal-ui/zipball/b21678237ae2f26a2319b8630223306bd2d76cd8",
+                "reference": "b21678237ae2f26a2319b8630223306bd2d76cd8",
                 "shasum": ""
             },
             "require": {
@@ -342,7 +343,7 @@
                 "user interface",
                 "wordpress"
             ],
-            "time": "2017-09-03 20:40:04"
+            "time": "2017-12-12 22:49:58"
         },
         {
             "name": "askupa-software/amarkal-validation",
@@ -399,12 +400,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/askupasoftware/amarkal-widget.git",
-                "reference": "2e4e71c3466f704326c805a75fc7dcbb517b1b16"
+                "reference": "fac62c5d72ca4649c887bbc67f81194a42b72fba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/askupasoftware/amarkal-widget/zipball/2e4e71c3466f704326c805a75fc7dcbb517b1b16",
-                "reference": "2e4e71c3466f704326c805a75fc7dcbb517b1b16",
+                "url": "https://api.github.com/repos/askupasoftware/amarkal-widget/zipball/fac62c5d72ca4649c887bbc67f81194a42b72fba",
+                "reference": "fac62c5d72ca4649c887bbc67f81194a42b72fba",
                 "shasum": ""
             },
             "require": {
@@ -441,7 +442,7 @@
                 "widget",
                 "wordpress"
             ],
-            "time": "2017-07-29 21:13:44"
+            "time": "2017-12-02 20:45:42"
         }
     ],
     "packages-dev": [],

@@ -37,7 +37,7 @@ class Settings
             'type'         => 'text',
             'title'        => 'Text Field',
             'description'  => 'The <code>text</code> field accepts any form of text',
-            'name'         => 'my-tools-textfield',
+            'name'         => 'my_tools_textfield',
             'placeholder'  => 'Enter text...',
             'default'      => '',
             'filter'       => 'sanitize_text_field'
