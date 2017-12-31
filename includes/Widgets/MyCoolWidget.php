@@ -28,7 +28,7 @@ class MyCoolWidget extends \Amarkal\Widget\AbstractWidget
                     'description'     => 'The <code>text</code> field accepts any form of text',
                     'help'            => 'This is a <code>help</code> tooltip that accepts HTML like <a href="#">links</a> and <strong>special stylig</strong>',
                     'name'            => 'content',
-                    'default'         => null
+                    'default'         => ''
                 ),
                 array(
                     'type'            => 'switch',
